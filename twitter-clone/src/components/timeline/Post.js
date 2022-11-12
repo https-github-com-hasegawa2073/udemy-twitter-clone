@@ -7,28 +7,27 @@ import PublishIcon from "@mui/icons-material/Publish";
 import React from "react";
 import "./Post.css";
 
-function Post() {
+function Post({ displayName, userName, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
-              プログラミングチュートリアル
+              {displayName}
               <span className="post__headerSpecial">
-                <VerifiedUserIcon className="post__badge" />
-                @Shin_Engineer
+                <VerifiedUserIcon className="post__badge" />@{userName}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>Reactなう。</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img src="https://source.unsplash.com/random" alt="" />
+        <img src={image} alt="" />
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
