@@ -15,11 +15,11 @@
 }
 
 .sidebar__tweet {
-  background-color: var(--twitter-color);
-  color: white;
-  font-weight: 900;
-  border: none;
-  border-radius: 30px;
-  height: 50px;
-  margin-top: 20px;
+  background-color: var(--twitter-color) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  border: none !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
 }
